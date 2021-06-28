@@ -1,4 +1,4 @@
-# I gang med Home Automation
+# Igang med Home Automation
 
 Når du går hjem idag vil du kunne installere Home Assistant, opsætte Wifi på Home assistant.
 
