@@ -74,28 +74,77 @@ IP Adresse: http://(findip fra DHCP Server):8123 f.eks. http://192.168.1.120:812
 
 ### Opstarts Billede
 Når du starter den 1. gang vil der blive installeret alt der skal bruges - dette kan tage op til 20 minutter på en langsom Raspberry
-
 ![2-hass-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-1.png)
 
 ### Oprette bruger
 Du skal oprette dig som bruger når du logger på 1. gang, det er vigtigt at du laver en kode som er komplex hvis du på sigt skal sætte din Home Assistant på Internettet
-
 ![2-hass-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-2.png)
+
+### Placering
+Du skal sætte en placering, det er vigtigt denne er korrekt og er der hvor dit device er, dette bruges blandt andet til at beregne hvor solen står i forhold til hvor du er.
 ![2-hass-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-3.png)
+
+### Diagnistics Data
+Der er helt sikkert en masse holdninger til dette - jeg anbefaler man deler med udviklerne, de levere trods alt et gratis produkt, og jeg er ret sikker på man ikke kommer til at have GDPR data her :-) Men som sagt, så er det helt op til jer selv.
 ![2-hass-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-4.png)
+
+### Tryk Afslut
 ![2-hass-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-5.png)
+
+### Hjemmeskærm
+Her kan du med fordel trykke Ja - så du ikke skal logge ind
 ![2-hass-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-6.png)
 
-## Opsætning af Wifi
+## Wifi Opstæning
+Det anebfales ikke man køre sin Home Assistant via Wifi, f.eks. hvis man vil lave noget automatisering på sigt der kan styre dit wifi, så er det ikke et så smart initiativ, og der er ingen problemer i at sætte sin Home Assistant direkte på din router. Men hvis du alligevel vil denne vej er der en guide her
+
+### Gå ind i Supervisor
 ![3-hasswifi-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-1.png)
+
+### Gå over i System
+Tryk Ændre under IPV4
 ![3-hasswifi-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-2.png)
+
+### Vælg WLAN0
+Sæt IPV4 til enten DHCP eller Fast IP
+
+Under Wifi vælg Scan for Adgangspunkter
 ![3-hasswifi-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-3.png)
+
+### Vælg det Wifi du vil forbinde til og udfyld kode i WPA-PSK og tryk GEM
+**OBS! Du vil få ny IP adresse på WLAN0 interface**
 ![3-hasswifi-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-4.png)
 
 
-# Installation af Zigbee
+# Gennemgang af Interface
+* Hjemmeskærm
+  * Start siden - med Tabs
+* Kort
+  * Hvis man har lokations tjenester kan man følge personer / ting på kortet
+* Logbog
+  * En log bog med handlinger
+* Historik
+  * Historiske data f.eks. temperatur sensor data historik
+* Mediebrowser
+  * Ja - bruger den ikke rigtig - Home Assistant er ikke et medie center!
+* Udviklerværktøjer
+  * Hvis du vil ned i maven på systemet
+* Supervisor
+  * Opdateringer / Plugins styres herfra
+* Indstillinger
+  * Hvis du vil ændre opsætningen på din Home Assisiant er det her det foregår
+* Notifikationer
+  * Info til dig - lidt som et "besked" system fra systemet
 
-## Installation af Zigbee dongle
+# Installation af Zigbee
+Zigbee - er den protokol som Philips Hue og Ikea Trådfri bruger, vi har mulighed for at tale direkte med en Trådfri pære via Home Assistant, uden at have en Ikea Gateway.
+
+Det er faktisk også muligt at bibeholde sin eksisteren [Ikea Trådfri](https://www.home-assistant.io/integrations/tradfri/) eller [Philips Hue](https://www.home-assistant.io/integrations/hue/) via Integrations hvis man allerede har en nuværende løsning kørende. Man vil have præcis samme muligheder via de integrationer som at tilføje enhederne direkte via en USB nøgle.
+
+## Installation af Zigbee dongle (ZHA)
+Det er muligt at købe en [CC2531 USB Dongle](https://mackabler.dk/sonoff-zigbee-cc2531-usb-dongle-3685.html?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=2687A5538131C3E8D2671FD36774C1014EAF1F91) som er direkte kompatibel med Home Assistants integration der hedder [ZHA](https://www.home-assistant.io/integrations/zha/).
+
+
 
 ## Paring med Ikea pære
 
