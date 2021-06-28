@@ -41,24 +41,24 @@ Det image som HomeAssistant stiller til rådighed hedder i daglig tale HassOS (H
 Vi kan bruge [balenaEtcher](https://www.balena.io/etcher/) til at flashe din firmware, og du kan enten downloade filen eller indsætte en URL direkte i programmet.
 
 ### Flash from URL
-![Vælg Flash from URL](Screenshots\1-etcher-1.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-1.png)
 
 ### Indsæt URL til Firmware
-![Vælg Flash from URL](Screenshots\1-etcher-2.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-2.png)
 
 ### Vælg Enhed
-![Vælg Flash from URL](Screenshots\1-etcher-3.png)
-![Vælg Flash from URL](Screenshots\1-etcher-4.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-3.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-4.png)
 
 ### Tryk Flash
 *Det kan tage op til 10 minutter alt efter hvor hurtig din internet forbindelse er*
 
-![Vælg Flash from URL](Screenshots\1-etcher-5.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-5.png)
 
 ### Færdig
 Hvis alt virker vil du få denne skærm frem når du er færdig.
 
-![Vælg Flash from URL](Screenshots\1-etcher-6.png)
+![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-6.png)
 
 ## Første opstart
 
