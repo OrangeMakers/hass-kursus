@@ -41,28 +41,57 @@ Det image som HomeAssistant stiller til rådighed hedder i daglig tale HassOS (H
 Vi kan bruge [balenaEtcher](https://www.balena.io/etcher/) til at flashe din firmware, og du kan enten downloade filen eller indsætte en URL direkte i programmet.
 
 ### Flash from URL
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-1.png)
+![1-etcher-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-1.png)
 
 ### Indsæt URL til Firmware
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-2.png)
+![1-etcher-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-2.png)
 
 ### Vælg Enhed
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-3.png)
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-4.png)
+![1-etcher-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-3.png)
+![1-etcher-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-4.png)
 
 ### Tryk Flash
 *Det kan tage op til 10 minutter alt efter hvor hurtig din internet forbindelse er*
 
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-5.png)
+![1-etcher-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-5.png)
 
 ### Færdig
 Hvis alt virker vil du få denne skærm frem når du er færdig.
 
-![Vælg Flash from URL](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-6.png)
+![1-etcher-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/1-etcher-6.png)
+
+Nu er din Raspberry klar til at starte 1. gang - for at komme til den Wizard som man sætter HomeAssistant op fra skal man forbinde via Ethernet, hvorfra man så kan sætte Wifi op.
+
+*Bemærk der kan godt gå op til 20 minutter før den er klar - der sker en del opsætning 1. gang den starter op*
 
 ## Første opstart
 
+Du har flere måder du kan åbne den på enten via IP eller via mDNS (Virker primært på Mac og Linux), jeg anbefaler Windows brugere at bruge IP adressen.
+
+DNS Navn: http://homeassistant.local:8123
+
+IP Adresse: http://(findip fra DHCP Server):8123 f.eks. http://192.168.1.120:8123
+
+### Opstarts Billede
+Når du starter den 1. gang vil der blive installeret alt der skal bruges - dette kan tage op til 20 minutter på en langsom Raspberry
+
+![2-hass-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-1.png)
+
+### Oprette bruger
+Du skal oprette dig som bruger når du logger på 1. gang, det er vigtigt at du laver en kode som er komplex hvis du på sigt skal sætte din Home Assistant på Internettet
+
+![2-hass-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-2.png)
+![2-hass-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-3.png)
+![2-hass-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-4.png)
+![2-hass-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-5.png)
+![2-hass-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/2-hass-6.png)
+
 ## Opsætning af Wifi
+![3-hasswifi-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-1.png)
+![3-hasswifi-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-2.png)
+![3-hasswifi-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-3.png)
+![3-hasswifi-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/3-hasswifi-4.png)
+
 
 # Installation af Zigbee
 
