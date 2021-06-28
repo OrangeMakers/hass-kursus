@@ -144,7 +144,25 @@ Det er faktisk også muligt at bibeholde sin eksisteren [Ikea Trådfri](https://
 ## Installation af Zigbee dongle (ZHA)
 Det er muligt at købe en [CC2531 USB Dongle](https://mackabler.dk/sonoff-zigbee-cc2531-usb-dongle-3685.html?utm_source=adtraction&utm_medium=affiliate&utm_campaign=adtraction&at_gd=2687A5538131C3E8D2671FD36774C1014EAF1F91) som er direkte kompatibel med Home Assistants integration der hedder [ZHA](https://www.home-assistant.io/integrations/zha/).
 
+### Åben Indstillinger
+Og klik på Integrationer
+![4-hasszha-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-1.png)
 
+### Vælg Tilføj Integration
+![4-hasszha-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-2.png)
+
+### Søg efter ZHA og tryk på **>**
+![4-hasszha-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-3.png)
+
+### Vælg den serial port der indeholder CC2531 (Dette er navn på Chippen fra Texas Instruments)
+Og tryk Send og Afslut
+![4-hasszha-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-4.png)
+![4-hasszha-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-5.png)
+![4-hasszha-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-6.png)
+
+### Nu er integrationen på plads
+Du kan nu gå igang med at pare dine enheder
+![4-hasszha-7.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-7.png)
 
 ## Paring med Ikea pære
 
