@@ -211,6 +211,44 @@ Hvis du har oprettet områder kan du tilføje et område
 # Simpel Automatisering
 I dette eksempel vil vi sætte pæren til at slukke og tænde hvert minut.
 
+### Åben indstillinger / Automatisering
+
+![6-hassautomation-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-1.png)
+
+### Vælg + Tilføj Automatisering
+
+![6-hassautomation-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-2.png)
+
+### Vælg Start med en tom automatisering
+
+![6-hassautomation-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-3.png)
+
+### Udfyld formularen
+Navn: Tænd Sluk pære hvert minut
+Tidsmønster: minut /1 (Betyder hvert minut)
+
+Betingelser: Ingen
+
+![6-hassautomation-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-4.png)
+
+### Vælg enhed Ikea pære
+Under handling vælg Skift ikea pære level, denne funktion laver en "toggle" på pæren så hvis den er tændt slukker den og er den 
+slukket tænder den
+
+Tryk nu **Gem**
+
+![6-hassautomation-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-5.png)
+
+### Du kan teste din automation ved at trykke på Udløs, den vil så køre din automatisering, når du køre den manuelt vil trigger / betingelser blive ignoreret
+
+![6-hassautomation-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-6.png)
+
+### Du kan også spore din automatisering for at se hvad der sker
+![6-hassautomation-7.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-7.png)
+
+
+# Gennemgang af automatisering
+
 # Installation af ESPHome
 
 Link til ESP Home / Devices etc
