@@ -165,8 +165,38 @@ Du kan nu gå igang med at pare dine enheder
 ![4-hasszha-7.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/4-hasszha-7.png)
 
 ## Paring med Ikea pære
+Vi skal have vores første enhed sat op på Home Assistant
 
-## Prøv at styre pære
+### Start med at gå ind i Indstillinger og klik på Integrationer
+![5-hassikeapair-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-1.png)
+
+### På din Zigbee Home Automation klikker du på Konfigurere
+![5-hassikeapair-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-2.png)
+
+### Klik på tilføj Enhed
+Når du klikker på denne knap vil den sætte dit Zigbee netværk i Pair Mode og det vil søge efter nye enheder i 60 sekunder.
+![5-hassikeapair-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-3.png)
+
+### Din controller vil nu søge efter enheder der kan tilføjes
+![5-hassikeapair-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-4.png)
+
+### Når den finder en enhed vil denne dukke op med informationer om hvad enheden er og hedder
+Hvis du har oprettet områder kan du tilføje et område
+![5-hassikeapair-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-5.png)
+
+### Det er vigtigt at navngive sin pære, da det kan være svært at finde den efterfølgende
+![5-hassikeapair-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-6.png)
+
+### Når din enhed er klar kan du teste den ved at gå tilbage til oversigten og trænde / slukkee / skifte farve på enheden.
+![5-hassikeapair-7.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-7.png)
+
+### Her et et eksempel på at skifte pæren til rød
+![5-hassikeapair-8.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-8.png)
+
+# Simpel Automatisering
+I dette eksempel vil vi sætte pæren til at slukke og tænde hvert minut.
+
+
 
 # Installation af ESPHome
 
