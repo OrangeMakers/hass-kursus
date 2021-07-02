@@ -249,9 +249,19 @@ Tryk nu **Gem**
 
 # Gennemgang af automatisering
 
-# Installation af ESPHome
+# Hvad er ESP Home?
 
 Link til ESP Home / Devices etc
+
+## Installation af ESP Home
+
+![7-hassesphome-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-1.png)
+![7-hassesphome-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-2.png)
+![7-hassesphome-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-3.png)
+![7-hassesphome-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-4.png)
+![7-hassesphome-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-5.png)
+![7-hassesphome-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-6.png)
+
 
 ## Installation af integration
 
