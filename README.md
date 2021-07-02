@@ -183,6 +183,8 @@ Vi skal have vores første enhed sat op på Home Assistant
 ### Klik på tilføj Enhed
 Når du klikker på denne knap vil den sætte dit Zigbee netværk i Pair Mode og det vil søge efter nye enheder i 60 sekunder.
 
+Hvis din pære ikke dukker op kan du [nulstille den](#Nulstille-Ikea-Pære)
+
 ![5-hassikeapair-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/5-hassikeapair-3.png)
 
 ### Din controller vil nu søge efter enheder der kan tilføjes
@@ -208,8 +210,6 @@ Hvis du har oprettet områder kan du tilføje et område
 
 # Simpel Automatisering
 I dette eksempel vil vi sætte pæren til at slukke og tænde hvert minut.
-
-
 
 # Installation af ESPHome
 
@@ -242,3 +242,26 @@ Aktuel version som passer til dette materiale, du kan altid finde nyeste version
 
 * [haos_rpi3-64-6.1.img.xz](https://github.com/zenturacp/hass-kursus/raw/main/Firmware/haos_rpi3-64-6.1.img.xz)
 * [haos_rpi4-64-6.1.img.xz](https://github.com/zenturacp/hass-kursus/raw/main/Firmware/haos_rpi4-64-6.1.img.xz)
+
+## Nulstille Ikea Pære
+
+Hvis du har svært ved at parre din Ikea pære kan du nulstille den, det gøres ved at tænde og slukke pæren hurtigt 6 gange efter hinanden, når det er sket vil pæren stå og skifte farve et kort øjeblik og den vil så være nulstillet.
+
+Video Guide:  
+https://youtu.be/iTBh8OBLJSw
+
+## Raspberry Pi oversigt
+
+Der er 4 Raspberry Pi 3'ere som er gjort klar, de har IP adresse 192.168.0.60-63
+
+| Username | Password |
+| -------- | -------- |
+| om       | 12345678 |
+
+Du skal forbinde via http på port 8123 f.eks. http://192.168.0.60-63:8123
+
+## Wifi
+
+| SSID | WPA-PSK  |
+| ---- | -------- |
+| HASS | 12345678 |
