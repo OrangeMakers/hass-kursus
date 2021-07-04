@@ -1,0 +1,54 @@
+esphome:
+  name: omkursus
+  platform: ESP8266
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "ea06852cf61501095b87ca77e3d95810"
+
+wifi:
+  ssid: "HASS"
+  password: "12345678"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Omkursus Fallback Hotspot"
+    password: "9MIIcZQgUMti"
+
+captive_portal:
+
+light:
+  - platform: monochromatic
+    name: "ESP Intern LED"
+    output: 'esp_internal_led'
+  - platform: monochromatic
+    name: "ESP Extern LED"
+    output: 'esp_external_led'
+
+output:
+  - platform: esp8266_pwm
+    pin: 15
+    id: 'esp_external_led'
+  - platform: esp8266_pwm
+    pin: 2
+    id: 'esp_internal_led'
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    pin: 13
+    name: "Motion Sensor"
+    device_class: motion
+  - platform: gpio
+    pin:
+      number: 12
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "ESP Switch"
+    
