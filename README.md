@@ -8,6 +8,41 @@ Du vil have prøvet at integrere ZigBee via en [CC2531 USB Dongle](https://macka
 
 **BEMÆRK** - Den dongle du køber skal have rigtig firmware, dem på ovenstående link er flashed med korrekt firmware fra fabrikken. Det er også muligt at købe dem via AliExpress, men pas på du får den rigtige.
 
+# Protokoller
+
+## Wifi
+Nok den mest kendte protokol, er hurtig og har ok rækkevide, men bruger meget strøm
+
+## Bluetooth
+Har ikke særlig god rækkevide og er ikke særlig adopteret som IoT protokol
+
+## ZigBee
+Meget brugt blandt andet af Philips Hue, og Ikea trådfri, meget letvægts protokol, bruger meget lidt strøm, og er et "mesh" netværk
+
+Zigbee køre AES128 som anses for sikkert og kommunikere på 2.4ghz hvilket kan give problemer med Wifi
+
+Et Zigbee netværk har en teoretisk maks på 65000 enheder men er aldrig opnået i virkeligheden
+
+## ZWave
+Ikke helt så meget brugt og har nogle begrænsinger og fordele, et mesh kan maks sende igennem 4 noder, og der kan maks være 232 enheder i et netværk.
+
+Dog køre ZWave 800-900Mhz ikke 2.4Ghz som Zigbee, dvs. ZWave virker bedre steder hvor der er meget Wifi.
+
+## LORA
+LORA er en radio protokol, som er anderledes end ovenstående da den er lavet og optimeret til lang distance meget små beskeder og ikke helt så realtime.
+
+LORA kan som udgangspunkt nemt række 1-2km men LORA beskeder har en begrænsing, og LORA er meget langsomt.
+
+## 866mhz (Radio)
+Kendt fra rullegardiner, og de trådløs styret Wall plugs fra Harald Nyborg, er en envejs protokol, uden validering.
+
+# Endnu en gateway eller?
+Hvorfor skal jeg skifte min Ikea Trådfri eller Hue Base ud?
+
+Svaret er - det behøver du heller ikke, men det er meget svært at få din Hue til at tænde blinke med lyset i stuen når din vaskemaskine i 5 minutter har trukket 0 Amperer?
+
+Home Assistant kan enten stå alene med diverse radioer på, eller kan forbinde til din eksisterende Philips Hue eller Ikea, ja der er ialt ca. [1800 integrationer](https://www.home-assistant.io/integrations/).
+
 # Home Assistant
 Home Assistant er bygget i Python og kan køre på alle aktuelle linux distributioner, det er dog ikke anbefalet at installere Home Assistant i hånden med mindre man er udvikler, der findes mange meget bedre løsninger.
 
@@ -271,9 +306,9 @@ Link til ESP Home / Devices etc
 
 # Automatisering
 
-## Tænd lampe når der er over 30 grader på temperatur føler
-
 ## Tænd lyset på et bestemt tidspunkt
+
+
 
 ## Optional: Pir Sensor
 
