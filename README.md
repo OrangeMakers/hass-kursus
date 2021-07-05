@@ -41,7 +41,9 @@ Hvorfor skal jeg skifte min Ikea Trådfri eller Hue Base ud?
 
 Svaret er - det behøver du heller ikke, men det er meget svært at få din Hue til at tænde blinke med lyset i stuen når din vaskemaskine i 5 minutter har trukket 0 Amperer?
 
-Home Assistant kan enten stå alene med diverse radioer på, eller kan forbinde til din eksisterende Philips Hue eller Ikea, ja der er ialt ca. [1800 integrationer](https://www.home-assistant.io/integrations/).
+Home Assistant kan enten stå alene med diverse radioer på, eller kan forbinde til din eksisterende [Philips Hue](https://www.home-assistant.io/integrations/hue/), [Ikea Trådfri](https://www.home-assistant.io/integrations/tradfri/) eller [Apple HomeKit](https://www.home-assistant.io/integrations/homekit/) ja der er ialt ca. [1800 integrationer](https://www.home-assistant.io/integrations/).
+
+![integrations-featured.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/integrations-featured.png)
 
 # Home Assistant
 Home Assistant er bygget i Python og kan køre på alle aktuelle linux distributioner, det er dog ikke anbefalet at installere Home Assistant i hånden med mindre man er udvikler, der findes mange meget bedre løsninger.
