@@ -54,9 +54,9 @@ Jeg bruger og anbefaler Home Assistant fordi systemet har en tilpas grad af muli
 
 Der er 4 måder man kan installere Home Assistant på og vi vil følge den 1. som jeg vil anbefale
 
-1. Home Assistant Operating System
+1. Home Assistant Operating System (**HassOS**)
 
-   * En pakke der indeholder det hele, som er tilgængelig til Raspberry og Intel NUC
+   * En pakke der indeholder det hele, som er tilgængelig til Raspberry og Intel NUC eller en virtuel maskine
 2. Home Assistant Container
 
    * Et Docker Image som indeholder Home Assistant Core
@@ -327,7 +327,6 @@ Hvis du er forbundet med SSL til din HomeAssistant kan din browser lave Remote S
 
 Jeg har lavet en test YAML fil som du kan downloade [her](https://raw.githubusercontent.com/zenturacp/hass-kursus/main/ESPHome/esp8266.yaml).
 
-
 ### Liste over Pins
 | PIN | Beskrivelse   |
 | --- | ------------- |
@@ -335,6 +334,9 @@ Jeg har lavet en test YAML fil som du kan downloade [her](https://raw.githubuser
 | 2   | Intern LED    |
 | 13  | Motion Sensor |
 | 12  | Binær Switch  |
+
+PIR Sensor har følgende pins som skal sættes på
+![mini-pir-pinout.jpg](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/mini-pir-pinout.jpg)
 
 Hele koden herunder kan blot sættes direkte ind og erstatte den kode Wizard har lavet, det er blot vigtigt at kalde enheden omkursus-1-10 så vi får unikke ESP'er på netværket og man kan kende sin.
 
@@ -397,11 +399,12 @@ binary_sensor:
 ```
 
 ## Forbind Home Assistant til ESPHome Enhed
+
 Når din enhed er flashed vil du via Integrationer se der er dukket en ny enhed op - denne enhed skal kobles ind på Home Assistant, dette er integreret via ESPHome Discovery, så de enheder der ligger i ESPHome kan Home Assisistant selv forbinde til.
 
 # Automatisering
 
-Nu kan vi eksperimentere med Automatisering mellem Zigbee og Wifi, når noget sker på ESP8266 kan vi "relay" over til pæren og få denne til at tænde og slukke.
+Nu kan vi eksperimentere med Automatisering mellem Zigbee og Wifi, når noget sker på ESP8266 kan vi "relay" beskeder over til pæren og få denne til at tænde og slukke.
 
 # Links
 
