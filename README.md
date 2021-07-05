@@ -336,7 +336,10 @@ Jeg har lavet en test YAML fil som du kan downloade [her](https://raw.githubuser
 | 12  | Binær Switch  |
 
 PIR Sensor har følgende pins som skal sættes på
+
 ![mini-pir-pinout.jpg](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/mini-pir-pinout.jpg)
+
+Switch er sat op til at køre PULLUP dvs. den skal sættes på mellem GND og pin 12.
 
 Hele koden herunder kan blot sættes direkte ind og erstatte den kode Wizard har lavet, det er blot vigtigt at kalde enheden omkursus-1-10 så vi får unikke ESP'er på netværket og man kan kende sin.
 
