@@ -281,40 +281,125 @@ Tryk nu **Gem**
 ### Du kan også spore din automatisering for at se hvad der sker
 ![6-hassautomation-7.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/6-hassautomation-7.png)
 
-
 # Gennemgang af automatisering
 
-# Hvad er ESP Home?
+* Enheder
+* Services
+* Events
 
-Link til ESP Home / Devices etc
+# Hvad er ESP Home?
+ESPHome er et addon du kan installere på Home Assistant, hvor man på en nem måde kan integere en billig ESP Chip, let og elegant ind i Home Assistant.
+
+Som udgangspunkt kommunikere Home Assistant med ESP via HTTP.
+
+Man kan se dokumentation via https://esphome.io som indeholder en liste over supporterede enheder.
 
 ## Installation af ESP Home
 
+### Gå ind under Supervisor / Butik for tilføjelsesprogrammer
+Søg efter ESPHome og vælg denne
+
 ![7-hassesphome-1.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-1.png)
 ![7-hassesphome-2.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-2.png)
+
+### Tryk Installer
+**Dette kan tage op til 20 minutter**
 ![7-hassesphome-3.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-3.png)
+
+### Når den er installeret skal du starte ESPHome og integrere denne i vores oversigt
+Det gøres ved at man åbner Supervisor og under betjeningspanel aktivere ESPHome
 ![7-hassesphome-4.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-4.png)
+
+### Tryk vis i sidepanel og vælg Start
 ![7-hassesphome-5.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-5.png)
+
+### Så er du klar til at tilføje første enhed
 ![7-hassesphome-6.png](https://github.com/zenturacp/hass-kursus/raw/main/Screenshots/7-hassesphome-6.png)
 
-
-## Installation af integration
-
 ## Opret første device - og flash det
+Nu skal vi have tilføjet første enhed
 
-## Test integration
+Udfyld med Navn / Wifi SSID og Wifi Password og tryk gem.
+
+Hvis du er forbundet med SSL til din HomeAssistant kan din browser lave Remote Serial, hvis ikke kan du sætte din enhed i din raspberry med et USB kabel og flashe den direkte via USB kabel.
+
+Jeg har lavet en test YAML fil som du kan downloade [her](https://raw.githubusercontent.com/zenturacp/hass-kursus/main/ESPHome/esp8266.yaml).
+
+
+### Liste over Pins
+| PIN | Beskrivelse   |
+| --- | ------------- |
+| 15  | Ekstern LED   |
+| 2   | Intern LED    |
+| 13  | Motion Sensor |
+| 12  | Binær Switch  |
+
+Hele koden herunder kan blot sættes direkte ind og erstatte den kode Wizard har lavet, det er blot vigtigt at kalde enheden omkursus-1-10 så vi får unikke ESP'er på netværket og man kan kende sin.
+
+
+```yaml
+esphome:
+  name: omkursus-X
+  platform: ESP8266
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  password: "ea06852cf61501095b87ca77e3d95810"
+
+wifi:
+  ssid: "HASS"
+  password: "12345678"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Omkursus Fallback Hotspot"
+    password: "9MIIcZQgUMti"
+
+captive_portal:
+
+light:
+  - platform: monochromatic
+    name: "ESP Intern LED"
+    output: 'esp_internal_led'
+  - platform: monochromatic
+    name: "ESP Extern LED"
+    output: 'esp_external_led'
+
+output:
+  - platform: esp8266_pwm
+    pin: 15
+    id: 'esp_external_led'
+  - platform: esp8266_pwm
+    pin: 2
+    id: 'esp_internal_led'
+    inverted: true
+
+binary_sensor:
+  - platform: gpio
+    pin: 13
+    name: "Motion Sensor"
+    device_class: motion
+  - platform: gpio
+    pin:
+      number: 12
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "ESP Switch"
+    
+```
+
+## Forbind Home Assistant til ESPHome Enhed
+Når din enhed er flashed vil du via Integrationer se der er dukket en ny enhed op - denne enhed skal kobles ind på Home Assistant, dette er integreret via ESPHome Discovery, så de enheder der ligger i ESPHome kan Home Assisistant selv forbinde til.
 
 # Automatisering
 
-## Tænd lyset på et bestemt tidspunkt
-
-
-
-## Optional: Pir Sensor
-
-### Diode
-
-### PIR Sensor
+Nu kan vi eksperimentere med Automatisering mellem Zigbee og Wifi, når noget sker på ESP8266 kan vi "relay" over til pæren og få denne til at tænde og slukke.
 
 # Links
 
