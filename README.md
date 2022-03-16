@@ -1,8 +1,6 @@
 # Igang med Home Automation
 
-<h2>URL: https://dkmaker-xyz.github.io/hass-kursus/</h2>
-
-#
+<h2>Vil du selv følge med? https://dkmaker-xyz.github.io/hass-kursus</h2>
 
 Når du går hjem idag vil du kunne installere Home Assistant, opsætte Wifi på Home assistant.
 
