@@ -1,6 +1,6 @@
-# URL Til materiale
+<!-- # URL Til materiale
 
-<h1>https://dkmaker-xyz.github.io/hass-kursus</h1>
+<h1>https://dkmaker-xyz.github.io/hass-kursus</h1> -->
 
 # Igang med Home Automation
 
