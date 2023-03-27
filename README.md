@@ -444,6 +444,6 @@ Instruktør raspberry kan nås på https://192.168.0.71:8123
 
 ## Wifi
 
-| SSID | WPA-PSK  | Router IP | Admin password | DHCP Scope | 
-| ---- | -------- | --------- | -------------- | ---------- |
+| SSID | WPA-PSK  | Router IP | Admin password | DHCP Scope                  | 
+| ---- | -------- | --------- | -------------- | --------------------------- |
 | HASS | 12345678 | 192.168.0.1 | 12345678     | 192.168.0.100-192.168.0.199 |
