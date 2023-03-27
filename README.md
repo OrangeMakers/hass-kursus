@@ -440,8 +440,10 @@ Der er 4 Raspberry Pi 3'ere som er gjort klar, de har IP adresse 192.168.0.60-63
 
 Du skal forbinde via http på port 8123 f.eks. http://192.168.0.60-63:8123
 
+Instruktør raspberry kan nås på https://192.168.0.71:8123
+
 ## Wifi
 
 | SSID | WPA-PSK  | Router IP | Admin password | DHCP Scope | 
 | ---- | -------- | --------- | -------------- | ---------- |
-| HASS | 12345678 | 192.168.0.1 | 12345678     |            |
+| HASS | 12345678 | 192.168.0.1 | 12345678     | 192.168.0.100-192.168.0.199 |
