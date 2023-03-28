@@ -140,23 +140,19 @@ Her kan du med fordel trykke Ja - så du ikke skal logge ind
 ## Wifi Opstæning
 Det anebfales ikke man køre sin Home Assistant via Wifi, f.eks. hvis man vil lave noget automatisering på sigt der kan styre dit wifi, så er det ikke et så smart initiativ, og der er ingen problemer i at sætte sin Home Assistant direkte på din router. Men hvis du alligevel vil denne vej er der en guide her
 
-### Gå ind i Supervisor
-![3-hasswifi-1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-1.png)
-
-### Gå over i System
-Tryk Ændre under IPV4
-![3-hasswifi-2.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-2.png)
+### Gå ind i Indstillinger og Netværk
+![3-hasswifi-1.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-1.1.png)
 
 ### Vælg WLAN0
 Sæt IPV4 til enten DHCP eller Fast IP
 
 Under Wifi vælg Scan for Adgangspunkter
-![3-hasswifi-3.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-3.png)
+![3-hasswifi-3.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-3.1.png)
 
 ### Vælg det Wifi du vil forbinde til og udfyld kode i WPA-PSK og tryk GEM
 **OBS! Du vil få ny IP adresse på WLAN0 interface**
-![3-hasswifi-4.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-4.png)
-
+![3-hasswifi-4.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-4.1.png)
+![3-hasswifi-5.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-5.1.png)
 
 # Gennemgang af Interface
 * Hjemmeskærm
