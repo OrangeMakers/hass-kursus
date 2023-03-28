@@ -151,7 +151,6 @@ Under Wifi vælg Scan for Adgangspunkter
 
 ### Vælg det Wifi du vil forbinde til og udfyld kode i WPA-PSK og tryk GEM
 **OBS! Du vil få ny IP adresse på WLAN0 interface**
-![3-hasswifi-4.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-4.1.png)
 ![3-hasswifi-5.1.png](https://github.com/OrangeMakers/hass-kursus/raw/main/Screenshots/3-hasswifi-5.1.png)
 
 # Gennemgang af Interface
